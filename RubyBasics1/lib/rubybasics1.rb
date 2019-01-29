@@ -10,7 +10,15 @@ end
 
 # Part II
 def max_2_sum arr
-  # YOUR CODE HERE
+  sum = 0
+  if arr.length == 0
+    return 0;
+  elsif arr.length == 1
+    return arr.max;
+  else arr = arr.sort
+    sum = arr[-1] + arr[-2]
+  return sum;
+  end
 end
 
 # Part III
