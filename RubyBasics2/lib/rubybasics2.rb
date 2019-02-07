@@ -7,7 +7,10 @@ end
 
 # Part II
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  if(/[aeiouAEIOU#]/.match(s[0]) || s.length == 0)
+    return false
+  end
+  return true
 end
 
 # Part III
