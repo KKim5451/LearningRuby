@@ -7,7 +7,15 @@ module FunWithStrings
     end
   end
   def count_words
-    # your code here
+    wordsHolder = Hash.new(0)
+    words = self.downcase.scan(/\w+/)
+    
+    words.each do |word|
+      wordsHolder[word] += 1
+    end
+    
+    return wordsHolder
+    
   end
   def anagram_groups
     # your code here
